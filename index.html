@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UNS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css.map">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <img src="/images//logo.png" alt="logo">
+        <ul id="ul">
+            <li><a href="#">La Universidad</a></li>
+            <li><a href="#">Programas Academicos</a></li>
+            <li><a href="#">Investigación</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Comunicados</a></li>
+            <li><a href="#">Admision</a></li>
+        </ul>
+        <div class="hamburger" onclick="showNav()"><i class="fas fa-bars" id="bars"></i></div>  
+    </nav>
+    <section class="banner">
+        <!-- <img src="/images/banner.jpg"/> -->
+    </section>
+    <section class="section-portal">
+        <div class="titles">
+            <h2>Portal Academico</h2>
+        </div>
+        <div class="slideshow">
+            <div class="slideshow-image">
+                <div class="slideshow-container mySlidesleft fade">
+                    <img src="/images/chica.jpg" alt="chica uns"/>
+                </div>
+                <div class="slideshow-container mySlidesleft fade" style="display: none;">
+                    <img src="/images/egresado.jpg" alt="chica uns"/>
+                </div>
+                <button class="prev" onclick="plusSlides(-1,'mySlidesleft','dotl')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'mySlidesleft','dotl')">&#10095;</button>
+                <div class="slide-indicators">
+                    <span class="dot dotl active" onclick="currentSlide(1,'mySlidesleft','dotl')"></span>
+                    <span class="dot dotl" onclick="currentSlide(2,'mySlidesleft','dotl')"></span>
+                </div>
+            </div>
+            
+            <div class="slideshow-image">
+                <div class="slideshow-container mySlidesright fade">
+                    <img src="/images/egresado.jpg" alt="chica uns"/>
+                </div>
+                <div class="slideshow-container mySlidesright fade" style="display: none;">
+                    <img src="/images/sixto.jpg" alt="chica uns"/>
+                </div>
+                <button class="prev" onclick="plusSlides(-1,'mySlidesright','dotr')">&#10094;</button>
+                <button class="next" onclick="plusSlides(1,'mySlidesright','dotr')">&#10095;</button>
+                <div class="slide-indicators">
+                    <span class="dot dotr active" onclick="currentSlide(1,'mySlidesleft','dotr')"></span>
+                    <span class="dot dotr" onclick="currentSlide(2,'mySlidesleft','dotr')"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-programs">
+        <div class="titles">
+            <h2>Nuestros Programas</h2>
+        </div>
+        <div class="slideshow">
+            <div class="slideshow-image">
+                <div class="slideshow-container">
+                    <img src="/images/pregrado.jpg" alt="chica uns"/>
+                </div>
+                <div class="slideshow-banner">
+                    <a href="#">Pregrado</a>
+                </div>
+            </div>
+            <div class="slideshow-image">
+                <div class="slideshow-container">
+                    <img src="/images/postgrado.jpg" alt="chica uns"/>
+                </div>
+                <div class="slideshow-banner">
+                    <a href="#">Postgrado</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-events">
+        <div class="titles">
+            <h2>Eventos</h2>
+        </div>
+        <div class="section-cards">
+            <div class="card slide-card">
+                <div class="card-header">
+                    <a href="#">UNS CONMEMORÓ 36 ANIVERSARIO CON CONFERENCIA MAGRISTRAL Y RECONOCIMIENTO
+                        A DESTACADOS DOCENTES
+                    </a>
+                    <p>21 de Diciembre, 2020</p>
+                </div>
+                <div class="card-body">
+                    <img src="/images/celebracion.jpg"/>
+                </div>
+                <div class="card-footer">
+                    <p>
+                        La Universidad Nacional del Santa (UNS) celebró su 36.º aniversario de vida institucional con la conferencia
+                        magistral virtual “Retos de la universidad para el desarrollo”, (...).
+                    </p>
+                </div>
+            </div>
+            <div class="card slide-card">
+                <div class="card-header">
+                    <a href="#">RECONOCEN A JOVEN POR OCUPAR PRIMER PUESTO EN COMPUTO GENERAL EN
+                        EXAMEN DE ADMISION ORDINARIO
+                    </a>
+                    <p> 12 de Noviembre, 2020</p>
+                </div>
+                <div class="card-body">
+                    <img src="/images/sixto.jpg"/>
+                </div>
+                <div class="card-footer">
+                    <p>
+                        Gabriela Adamari Tolentino Carranza, de 17 años, obtuvo el primer puesto en el cómputo general del examen de
+                        admisión 2020 – II de la Universidad Nacional del Santa (UNS), (...).
+                    </p>
+                </div>
+            </div>
+            <div class="card slide-card" >
+                <div class="card-header">
+                    <a href="#">TRABAJADORES DE LA UNS RECIBEN KIT DE BIOSEGURIDAD AL RETORNAR A SUS LABORES</a>
+                    <p>05 de Octubre, 2020</p>
+                </div>
+                <div class="card-body">
+                    <img src="/images/repartiendo.jpeg"/>
+                </div>
+                <div class="card-footer">
+                    <p>
+                        Con el inicio gradual de la cuarta fase de reactivación económica en todo el país y tras el levantamiento
+                        de la cuarentena impuesta por el Gobierno Central, (...).
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card slide-card" >
+                <div class="card-header">
+                    <a href="#">Menggelar Wisuda Online</a>
+                    <p>By Arman Syarif | June 29th, 2020</p>
+                </div>
+                <div class="card-body">
+                    <img src="/images/chica.jpg"/>
+                </div>
+                <div class="card-footer">
+                    <p>
+                        Makassar - SMK Telkom Makassar wisuda online untuk 370 siswa angkatan ke-26
+                        (Senin, 29 Juni 2020)
+                        Acara rutin setiap penghujung tahun ajaran ini, untuk kali ini memang (...)
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section-card-buttons">
+            <a href="#">Ver todos los Eventos</a>
+        </div>
+    </section>
+    <section class="section-map">
+        <div class="">
+            <div class="img-logo">
+                <img src="/images/logo.png" alt="logo uns">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Universidad</a></li>
+                    <li><a href="#">Directorio</a></li>
+                    <li><a href="#">Intranet</a></li>
+                    <li><a href="#">Pago Virtual - Fut - Tarifario UNS</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Transparencia</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Consultorio Juridico Gratuito UNS</a></li>
+                    <li><a href="#">Convocatorias</a></li>
+                    <li><a href="#">Bolsa Laboral</a></li>
+                    <li><a href="#">Comite Electoral</a></li>
+                    <li><a href="#">Sala de Docentes</a></li>
+                    <li><a href="#">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="map">
+            <img src="/images/mapsuns.png" alt="mapa uns">
+        </div>
+    </section>
+    <footer>
+        <div class="info">
+            <p>Av. Pacifico 508 - Nuevo Chimbote</p>
+            <p>Central Telefonica: (51)43-310445</p>
+            <p>©2016 Dirección de imagen institucional</p>
+            <p>Transparencia Universitaria: transparencia@uns.edu.pe</p>
+        </div>
+        <div class="copy">
+            ©2020 UNS - Universidad Nacional del Santa | Todos los derechos reservados
+        </div>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
